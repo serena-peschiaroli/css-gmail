@@ -1,35 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com"> 
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,100&family=Urbanist&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,100&family=Urbanist&display=swap"
+        rel="stylesheet">
+    <title>Fake Gmail</title>
 </head>
+
 <body>
     <div class="container">
-    <!-- header -->
+        <!-- header -->
         <div class="header-top">
-            <img class="logo" src="img/gmail_logo.png">
-            <span class="logo.text" >Gmail</span>
+            <img class="logo" src="img/gmail_logo.png" alt="Gmail Logo">
+            <span class="logo-text">Gmail</span>
         </div>
         <!-- header top -->
         <!-- header bottom -->
         <div class="header-bottom">
-            <p>you have <span class="counter">30</span> unread messages</p>
+            <p>You have <span class="counter"></span> unread messages</p>
+            <button id="mark-read">Mark all as read</button>
         </div>
         <!-- /header -->
 
         <!-- main -->
         <ul class="mail-list">
-            <li>Oggetto della mail</li>
+            <li class="mail-item unread">Oggetto della mail 1</li>
+            <li class="mail-item unread">Oggetto della mail 2</li>
+            <li class="mail-item unread">Oggetto della mail 3</li>
+            <li class="mail-item unread">Oggetto della mail 4</li>
+            <li class="mail-item unread">Oggetto della mail 5</li>
         </ul>
         <!-- /main -->
-        
     </div>
+
+    <script src="js/script.js"></script>
 </body>
+
 </html>
